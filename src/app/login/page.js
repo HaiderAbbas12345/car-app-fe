@@ -23,7 +23,7 @@ const Login = () => {
   const handleSubmit = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:5050/api/user/login",
+        "https://car-app-be-production.up.railway.app/api/user/login",
         form
       );
       localStorage.setItem("token", response.data.token);

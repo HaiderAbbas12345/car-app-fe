@@ -60,7 +60,7 @@ const SubmitCar = () => {
       images.forEach((image) => formData.append("images", image));
 
       const response = await axios.post(
-        "http://localhost:5050/api/car/submit",
+        "https://car-app-be-production.up.railway.app/api/car/submit",
         formData,
         {
           headers: {
