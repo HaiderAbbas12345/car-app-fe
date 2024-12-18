@@ -1,4 +1,5 @@
 import { Poppins } from "next/font/google";
+
 import "./globals.css";
 
 const geistMono = Poppins({
@@ -15,11 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={` ${geistMono.variable} antialiased`}>{children}</body>
     </html>
   );
 }
